@@ -2,12 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ce75f9f1-ed96-4698-a3d4-213a7d04c707" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/company/labs/lab3/Summator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/lab3/SummatorTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/lab3/WordCounterTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Java.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Java.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/com/company/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/com/company/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/labs/lab2/WordCounter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/labs/lab2/WordCounter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/labs/lab3/Summator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/labs/lab3/Summator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/lab3/SummatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/lab3/SummatorTest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -50,30 +49,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.SummatorTest">
-    <configuration name="Book" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.company.labs.lab2.Book" />
-      <module name="Java" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.company.labs.lab2.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="com.company.Main" />
-      <module name="Java" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.WordCounterTest">
     <configuration name="WordCounter" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.company.labs.lab2.WordCounter" />
       <module name="Java" />
@@ -87,7 +63,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SummatorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="WordCounterTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Java" />
       <extension name="coverage">
         <pattern>
@@ -96,18 +72,67 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="test.lab3" />
-      <option name="MAIN_CLASS_NAME" value="test.lab3.SummatorTest" />
+      <option name="MAIN_CLASS_NAME" value="test.lab3.WordCounterTest" />
       <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WordCounterTest.empties" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.lab3.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="test.lab3" />
+      <option name="MAIN_CLASS_NAME" value="test.lab3.WordCounterTest" />
+      <option name="METHOD_NAME" value="empties" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WordCounterTest.f" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.lab3.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="test.lab3" />
+      <option name="MAIN_CLASS_NAME" value="test.lab3.WordCounterTest" />
+      <option name="METHOD_NAME" value="f" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WordCounterTest.multipleOccurence" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.lab3.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="test.lab3" />
+      <option name="MAIN_CLASS_NAME" value="test.lab3.WordCounterTest" />
+      <option name="METHOD_NAME" value="multipleOccurence" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.SummatorTest" />
+        <item itemvalue="JUnit.WordCounterTest" />
+        <item itemvalue="JUnit.WordCounterTest.f" />
+        <item itemvalue="JUnit.WordCounterTest.empties" />
+        <item itemvalue="JUnit.WordCounterTest.multipleOccurence" />
         <item itemvalue="Application.WordCounter" />
-        <item itemvalue="Application.Book" />
-        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -126,7 +151,10 @@
       <workItem from="1568278604932" duration="2339000" />
       <workItem from="1568485416562" duration="7355000" />
       <workItem from="1568871062710" duration="88000" />
-      <workItem from="1569475409595" duration="3183000" />
+      <workItem from="1569475409595" duration="3964000" />
+      <workItem from="1569481833614" duration="199000" />
+      <workItem from="1569486711490" duration="1453000" />
+      <workItem from="1570035821814" duration="5074000" />
     </task>
     <task id="LOCAL-00001" summary="Fisrt Homework done (WordCounter)">
       <created>1568572882008</created>
@@ -135,7 +163,14 @@
       <option name="project" value="LOCAL" />
       <updated>1568572882008</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="included unit tests">
+      <created>1569478683985</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1569478683985</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -153,6 +188,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Fisrt Homework done (WordCounter)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fisrt Homework done (WordCounter)" />
+    <MESSAGE value="included unit tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="included unit tests" />
   </component>
 </project>

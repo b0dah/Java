@@ -11,21 +11,45 @@ public class WordCounter {
     HashMap < String, Integer> uniqueWordsMap = new HashMap();
 
     public WordCounter(String inputString) {
+        //countOfUniqueWords = count(inputString);
 
-        sourceString = inputString;
-        splittedWords = sourceString.split("\\s");
-        countOfWords = splittedWords.length;
+//        sourceString = inputString.trim();
+//        splittedWords = sourceString.split("\\s+");
+//        countOfWords = splittedWords.length;
+//
+//        for (String word : splittedWords) {
+//            if (!uniqueWordsMap.containsKey(word)) {
+//                uniqueWordsMap.put(word, 0);
+//            }
+//            uniqueWordsMap.put(word, uniqueWordsMap.get(word) + 1);
+//        }
+//        return uniqueWordsMap.size();
+    }
 
-        for (String word : splittedWords){
+    public static int count(String inputString) {
+        String sourceString = inputString.trim();
+        sourceString = sourceString.replaceAll("[^a-zA-Z\\s]", "");
+
+        if (sourceString.equals("")) {
+            return 0;
+        }
+
+        String [] splittedWords = sourceString.split("\\s+");
+        int countOfWords = splittedWords.length;
+
+        HashMap < String, Integer> uniqueWordsMap = new HashMap();
+
+        for (String word : splittedWords) {
             if (!uniqueWordsMap.containsKey(word)) {
                 uniqueWordsMap.put(word, 0);
             }
             uniqueWordsMap.put(word, uniqueWordsMap.get(word) + 1);
         }
+        return uniqueWordsMap.size();
     }
 
     public void printMessageInfo(){
-        System.out.println("The message contains " + this.countOfWords + " words \n and " + this.uniqueWordsMap.size() + " unique words");
+        System.out.println("The message contains " + this.countOfWords + " words and " + this.uniqueWordsMap.size() + " unique words");
 
         for (String word : uniqueWordsMap.keySet()){
             System.out.println(" " + word + " : " + uniqueWordsMap.get(word) + " times");
@@ -34,28 +58,8 @@ public class WordCounter {
 
 
     public static void main(String[] args) {
-        String inputString = "xxx ooo xxx";
-        WordCounter counterInstance = new WordCounter(inputString);
+        String inputString = "   xxx   ooo xxx    ";
+        WordCounter counterInstance = new WordCounter("   X");
         counterInstance.printMessageInfo();
-
-        /// sample
-        // get
-//        System.out.println("Введите текст");
-//        Scanner in = new Scanner(System.in);
-//        String string = in.nextLine();
-//        String[] words = string.split("\\s+");
-//
-//        HashMap <String, Integer> wordToCount = new HashMap<>();
-//
-//        for (String word : words) {
-//            if (!wordToCount.containsKey(word)) {
-//                wordToCount.put(word, 0);
-//            }
-//            wordToCount.put(word, wordToCount.get(word) + 1);
-//        }
-//
-//        for (String word : wordToCount.keySet()) {
-//            System.out.println(word + " " + wordToCount.get(word));
-//        }
     }
 }

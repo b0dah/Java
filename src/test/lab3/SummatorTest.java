@@ -8,6 +8,8 @@ public class SummatorTest {
     @Test
     public void summFunctionTest() {
         Assertions.assertEquals(4, Summator.summFunction(2,2));
+        Assertions.assertEquals(8, Summator.summFunction(6,2));
+
     }
 
     @Test
