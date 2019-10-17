@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ce75f9f1-ed96-4698-a3d4-213a7d04c707" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/company/labs/lab4/Child.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/company/labs/lab4/Parent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/company/labs/lab4/UniversityDemo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/labs/lab4/Child.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/labs/lab4/Child.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -153,7 +153,8 @@
       <workItem from="1569481833614" duration="199000" />
       <workItem from="1569486711490" duration="1453000" />
       <workItem from="1570035821814" duration="5342000" />
-      <workItem from="1570081848981" duration="1455000" />
+      <workItem from="1570081848981" duration="1474000" />
+      <workItem from="1571289934238" duration="754000" />
     </task>
     <task id="LOCAL-00001" summary="Fisrt Homework done (WordCounter)">
       <created>1568572882008</created>
@@ -176,7 +177,14 @@
       <option name="project" value="LOCAL" />
       <updated>1570041576258</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="lab4">
+      <created>1570085268223</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1570085268223</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -196,6 +204,7 @@
     <MESSAGE value="Fisrt Homework done (WordCounter)" />
     <MESSAGE value="included unit tests" />
     <MESSAGE value="included unit tests for WordCounter Class" />
-    <option name="LAST_COMMIT_MESSAGE" value="included unit tests for WordCounter Class" />
+    <MESSAGE value="lab4" />
+    <option name="LAST_COMMIT_MESSAGE" value="lab4" />
   </component>
 </project>
