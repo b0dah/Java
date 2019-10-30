@@ -152,7 +152,7 @@
       <workItem from="1571664454376" duration="43000" />
       <workItem from="1571824502080" duration="17805000" />
       <workItem from="1572422489306" duration="84000" />
-      <workItem from="1572467438752" duration="2041000" />
+      <workItem from="1572467438752" duration="3915000" />
     </task>
     <task id="LOCAL-00001" summary="Fisrt Homework done (WordCounter)">
       <created>1568572882008</created>
@@ -196,7 +196,14 @@
       <option name="project" value="LOCAL" />
       <updated>1571862017833</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Schedule represents for both student and educator">
+      <created>1572470436242</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1572470436242</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -219,6 +226,7 @@
     <MESSAGE value="lab4" />
     <MESSAGE value="lab4 added" />
     <MESSAGE value="lab4 implemented" />
-    <option name="LAST_COMMIT_MESSAGE" value="lab4 implemented" />
+    <MESSAGE value="Schedule represents for both student and educator" />
+    <option name="LAST_COMMIT_MESSAGE" value="Schedule represents for both student and educator" />
   </component>
 </project>

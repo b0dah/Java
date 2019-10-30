@@ -6,7 +6,7 @@ import javax.xml.namespace.QName;
 import java.lang.reflect.Array;
 import java.time.LocalDateTime;
 import java.time.Month;
-import java.util.Optional;
+import java.util.*;
 
 enum Subject {
     analysis,
@@ -52,7 +52,7 @@ class Student extends Member {
 }
 //=============================
 
-class Lesson {
+class Lesson implements Comparable<Lesson>{
     int number; // ?
     Subject subject;
     Group group;
@@ -65,6 +65,14 @@ class Lesson {
         this.group = group;
         this.time = time;
         this.educator = educator;
+    }
+
+    @Override
+    public int compareTo(Lesson lesson) {
+        if (this.time == null || lesson.time == null)
+            return 0;
+
+        return this.time.compareTo(lesson.time);
     }
 }
 
@@ -102,26 +110,27 @@ class Schedule {
     // methods for getting result
     public void getEducatorSchedule(Educator educator) {
 
+        List<Lesson> desiredLessons = new ArrayList<Lesson>();
+
         System.out.println("\n \n Here is the schedule for educator " + educator.name + " for next week:");
 
-        for (Lesson eachLesson : this.lessons) {
-            //if ( eductorName.equals(eachLesson.educator.name) ) {
-            if (educator.equals(eachLesson.educator)) {
-                System.out.println("\n ------------ " + eachLesson.number + " --------------- \n");
-                System.out.println(eachLesson.subject);
-                System.out.println("\t" + eachLesson.time.toLocalDate());
-                System.out.println("\t" + eachLesson.time.toLocalTime());
-                System.out.println("\t group: " + eachLesson.group.speciality);
-            }
-        }
+        for (Lesson eachLesson : this.lessons)
+            if (educator.equals(eachLesson.educator))
+                desiredLessons.add(eachLesson);
+
+
+        Collections.sort(desiredLessons);
+        prettyLessonOutput(desiredLessons);
     }
 
     public void getStudentSchedule(Student student) {
 
         System.out.println("\n \n Here is the schedule for student " + student.name + " for next week:");
 
+        List<Lesson> desiredLessons = new ArrayList<Lesson>();
         Group desiredGroup = null;
 
+        // find out desired group
         for (Group eachGroup : groups) {
             if (eachGroup.containsStudent(student)) {
                 desiredGroup = eachGroup;
@@ -129,19 +138,30 @@ class Schedule {
             }
         }
 
+        // guard
         if (desiredGroup == null) {
             System.out.println("ERROR: \n There is no such Student in the groups");
             return;
         }
 
-        for (Lesson eachLesson : this.lessons) {
-            if (eachLesson.group.equals(desiredGroup)) {
-                System.out.println("\n ------------ " + eachLesson.number + " --------------- \n");
-                System.out.println(eachLesson.subject);
-                System.out.println("\t" + eachLesson.time.toLocalDate());
-                System.out.println("\t" + eachLesson.time.toLocalTime());
-                System.out.println("\t group: " + eachLesson.group.speciality);
-            }
+        // List formation
+        for (Lesson eachLesson : this.lessons)
+            if (eachLesson.group.equals(desiredGroup))
+                desiredLessons.add(eachLesson);
+
+
+        Collections.sort(desiredLessons);
+        prettyLessonOutput(desiredLessons);
+    }
+
+    private void prettyLessonOutput(List<Lesson> lessons) {
+        for (Lesson eachLesson : lessons) {
+            System.out.println("\n ------------ " + eachLesson.number + " --------------- ");
+            System.out.println("|" + eachLesson.subject + "|");
+            System.out.println("\t" + eachLesson.time.toLocalDate());
+            System.out.println("\t" + eachLesson.time.toLocalTime());
+            System.out.println("\t group: " + eachLesson.group.speciality);
+            System.out.println();
         }
     }
 }
