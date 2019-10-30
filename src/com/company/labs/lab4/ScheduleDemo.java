@@ -3,6 +3,7 @@ package com.company.labs.lab4;
 import com.company.labs.lab3.Summator;
 
 import javax.xml.namespace.QName;
+import java.lang.reflect.Array;
 import java.time.LocalDateTime;
 import java.time.Month;
 import java.util.Optional;
@@ -77,25 +78,35 @@ class Group {
         this.students = students;
         this.speciality = speciality;
     }
+
+    public boolean containsStudent(Student student) {
+
+        for (Student eachStudent: students)  // Array.asList(student).contains()-???
+            if (eachStudent.equals(student)) return true;
+
+            return false;
+    }
 }
 
 
 
 class Schedule {
     Lesson lessons[];
+    Group groups[];
 
-
-    public Schedule(Lesson[] lessons) {
+    public Schedule(Lesson[] lessons, Group groups[]) {
         this.lessons = lessons;
+        this.groups = groups;
     }
 
     // methods for getting result
-    public void getEducatorSchedule(String eductorName) {
+    public void getEducatorSchedule(Educator educator) {
 
-        System.out.println("\n \n Here is the schedule for educator " + eductorName + " for next week:");
+        System.out.println("\n \n Here is the schedule for educator " + educator.name + " for next week:");
 
         for (Lesson eachLesson : this.lessons) {
-            if ( eductorName.equals(eachLesson.educator.name) ) {
+            //if ( eductorName.equals(eachLesson.educator.name) ) {
+            if (educator.equals(eachLesson.educator)) {
                 System.out.println("\n ------------ " + eachLesson.number + " --------------- \n");
                 System.out.println(eachLesson.subject);
                 System.out.println("\t" + eachLesson.time.toLocalDate());
@@ -105,30 +116,32 @@ class Schedule {
         }
     }
 
-    public void getStudentSchedule(String studentName) {
+    public void getStudentSchedule(Student student) {
 
-        Speciality certainStudentSpeciality;
+        System.out.println("\n \n Here is the schedule for student " + student.name + " for next week:");
 
-        System.out.println("\n \n Here is the schedule for student " + studentName + " for next week:");
+        Group desiredGroup = null;
+
+        for (Group eachGroup : groups) {
+            if (eachGroup.containsStudent(student)) {
+                desiredGroup = eachGroup;
+                break;
+            }
+        }
+
+        if (desiredGroup == null) {
+            System.out.println("ERROR: \n There is no such Student in the groups");
+            return;
+        }
 
         for (Lesson eachLesson : this.lessons) {
-
-                for (Student eachStudent : eachLesson.group.students ) {
-                    if ( studentName.equals(eachStudent.name)) {
-                        certainStudentSpeciality = eachLesson.group.speciality;
-                        break;
-                    }
-                }
-
-                //if  (Optional.of(certainStudentSpeciality).ifPresent())/* & eachLesson.group.speciality.equals(certainStudentSpeciality))*/ {
-
-                //}
-
+            if (eachLesson.group.equals(desiredGroup)) {
                 System.out.println("\n ------------ " + eachLesson.number + " --------------- \n");
                 System.out.println(eachLesson.subject);
                 System.out.println("\t" + eachLesson.time.toLocalDate());
                 System.out.println("\t" + eachLesson.time.toLocalTime());
                 System.out.println("\t group: " + eachLesson.group.speciality);
+            }
         }
     }
 }
@@ -225,8 +238,10 @@ public class ScheduleDemo {
                 new Lesson(4, Subject.webDev, eleventhGroup, LocalDateTime.of(2019, Month.NOVEMBER, 1, 13, 00), sinitsa),
         };
 
-        Schedule nextWeekSchedule = new Schedule(lessons);
-        nextWeekSchedule.getEducatorSchedule("Malukhin");
+        Schedule nextWeekSchedule = new Schedule(lessons, new Group[] {tenthGroup, eleventhGroup});
+
+        //nextWeekSchedule.getEducatorSchedule(malukhin);
+        nextWeekSchedule.getStudentSchedule(vova);
 
 
     }
