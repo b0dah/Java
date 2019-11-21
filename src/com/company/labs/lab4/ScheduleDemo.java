@@ -260,8 +260,8 @@ public class ScheduleDemo {
 
         Schedule nextWeekSchedule = new Schedule(lessons, new Group[] {tenthGroup, eleventhGroup});
 
-        //nextWeekSchedule.getEducatorSchedule(malukhin);
-        nextWeekSchedule.getStudentSchedule(vova);
+        nextWeekSchedule.getEducatorSchedule(malukhin);
+        //nextWeekSchedule.getStudentSchedule(vova);
 
 
     }
