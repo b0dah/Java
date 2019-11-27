@@ -1,9 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ce75f9f1-ed96-4698-a3d4-213a7d04c707" name="Default Changelist" comment="">
+    <list default="true" id="ce75f9f1-ed96-4698-a3d4-213a7d04c707" name="Default Changelist" comment="Old labs altered">
+      <change afterPath="$PROJECT_DIR$/lib/bsh-2.0b6.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/jcommander-1.72.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/testng-6.14.3.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/company/labs/lab6/SerializationDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/lab4/ScheduleTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/labs/lab4/ScheduleDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/labs/lab4/ScheduleDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Java.iml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -22,16 +27,20 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1QW93uGstj4FG9zgLnThizgyGXz" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="PropertiesComponent">
-    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="Downloaded.Files.Path.Enabled" value="true" />
     <property name="Repository.Attach.Annotations" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RunDashboard">
@@ -46,7 +55,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.ScheduleDemo">
+  <component name="RunManager" selected="JUnit.ScheduleTest.ScheduleTest">
     <configuration name="ScheduleDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.company.labs.lab4.ScheduleDemo" />
       <module name="Java" />
@@ -60,12 +69,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Summator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.company.labs.lab3.Summator" />
+    <configuration name="SerializationDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.company.labs.lab6.SerializationDemo" />
       <module name="Java" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.company.labs.lab3.*" />
+          <option name="PATTERN" value="com.company.labs.lab6.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -86,6 +95,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ScheduleTest.ScheduleTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.lab4.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="test.lab4" />
+      <option name="MAIN_CLASS_NAME" value="test.lab4.ScheduleTest" />
+      <option name="METHOD_NAME" value="ScheduleTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="WordCounterTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Java" />
       <extension name="coverage">
@@ -101,29 +126,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="WordCounterTest.f" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Java" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="test.lab3.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="test.lab3" />
-      <option name="MAIN_CLASS_NAME" value="test.lab3.WordCounterTest" />
-      <option name="METHOD_NAME" value="f" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ScheduleTest.ScheduleTest" />
+        <item itemvalue="Application.SerializationDemo" />
         <item itemvalue="Application.ScheduleDemo" />
-        <item itemvalue="Application.Summator" />
         <item itemvalue="Application.WordCounter" />
         <item itemvalue="JUnit.WordCounterTest" />
-        <item itemvalue="JUnit.WordCounterTest.f" />
       </list>
     </recent_temporary>
   </component>
@@ -152,7 +161,11 @@
       <workItem from="1571664454376" duration="43000" />
       <workItem from="1571824502080" duration="17805000" />
       <workItem from="1572422489306" duration="84000" />
-      <workItem from="1572467438752" duration="3915000" />
+      <workItem from="1572467438752" duration="4331000" />
+      <workItem from="1572498995654" duration="5940000" />
+      <workItem from="1574283466430" duration="8511000" />
+      <workItem from="1574341637081" duration="235000" />
+      <workItem from="1574854143654" duration="1319000" />
     </task>
     <task id="LOCAL-00001" summary="Fisrt Homework done (WordCounter)">
       <created>1568572882008</created>
@@ -203,7 +216,21 @@
       <option name="project" value="LOCAL" />
       <updated>1572470436242</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="SORT ADDED! GN">
+      <created>1572472379405</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1572472379405</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Old labs altered">
+      <created>1574854870684</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1574854870684</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -220,6 +247,7 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Fisrt Homework done (WordCounter)" />
     <MESSAGE value="included unit tests" />
     <MESSAGE value="included unit tests for WordCounter Class" />
@@ -227,6 +255,8 @@
     <MESSAGE value="lab4 added" />
     <MESSAGE value="lab4 implemented" />
     <MESSAGE value="Schedule represents for both student and educator" />
-    <option name="LAST_COMMIT_MESSAGE" value="Schedule represents for both student and educator" />
+    <MESSAGE value="SORT ADDED! GN" />
+    <MESSAGE value="Old labs altered" />
+    <option name="LAST_COMMIT_MESSAGE" value="Old labs altered" />
   </component>
 </project>
