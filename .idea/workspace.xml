@@ -1,14 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ce75f9f1-ed96-4698-a3d4-213a7d04c707" name="Default Changelist" comment="Old labs altered">
-      <change afterPath="$PROJECT_DIR$/src/com/company/labs/lab6/SerializationDemo.java" afterDir="false" />
+    <list default="true" id="ce75f9f1-ed96-4698-a3d4-213a7d04c707" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TextFiles/file1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TextFiles/file10.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TextFiles/file2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TextFiles/file3.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TextFiles/file4.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TextFiles/file5.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TextFiles/file6.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TextFiles/file7.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TextFiles/file8.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TextFiles/file9.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/company/labs/lab5/CountWordsInFiles.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/company/labs/lab5/InputStreamDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/company/labs/lab5/ReadFile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/company/labs/lab5/SingletonDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/company/labs/lab6/OrderModel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/com/company/labs/lab4/Schedule.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/com/company/labs/lab4/Schedule.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/com/company/labs/lab4/ScheduleDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/com/company/labs/lab4/ScheduleDemo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/labs/lab4/Schedule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/labs/lab4/Schedule.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/labs/lab4/ScheduleDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/labs/lab4/ScheduleDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/lab4/ScheduleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/lab4/ScheduleTest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -55,13 +65,26 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ScheduleTest.testStudentSchedule">
-    <configuration name="ScheduleDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.company.labs.lab4.ScheduleDemo" />
+  <component name="RunManager" selected="Application.CountWordsInFiles">
+    <configuration name="CountWordsInFiles" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.company.labs.lab5.CountWordsInFiles" />
       <module name="Java" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.company.labs.lab4.*" />
+          <option name="PATTERN" value="com.company.labs.lab5.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ReadFile" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.company.labs.lab5.ReadFile" />
+      <module name="Java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.company.labs.lab5.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -75,19 +98,6 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.company.labs.lab6.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="WordCounter" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.company.labs.lab2.WordCounter" />
-      <module name="Java" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.company.labs.lab2.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -129,11 +139,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.CountWordsInFiles" />
+        <item itemvalue="Application.ReadFile" />
         <item itemvalue="JUnit.ScheduleTest.testStudentSchedule" />
         <item itemvalue="JUnit.ScheduleTest.ScheduleTest" />
         <item itemvalue="Application.SerializationDemo" />
-        <item itemvalue="Application.ScheduleDemo" />
-        <item itemvalue="Application.WordCounter" />
       </list>
     </recent_temporary>
   </component>
@@ -166,7 +176,7 @@
       <workItem from="1572498995654" duration="5940000" />
       <workItem from="1574283466430" duration="8511000" />
       <workItem from="1574341637081" duration="235000" />
-      <workItem from="1574854143654" duration="5306000" />
+      <workItem from="1574854143654" duration="11358000" />
     </task>
     <task id="LOCAL-00001" summary="Fisrt Homework done (WordCounter)">
       <created>1568572882008</created>
@@ -245,7 +255,14 @@
       <option name="project" value="LOCAL" />
       <updated>1574855794933</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Schedule tests done for now">
+      <created>1574872913659</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1574872913659</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -274,6 +291,7 @@
     <MESSAGE value="Old labs altered" />
     <MESSAGE value="service files" />
     <MESSAGE value="Test on primitive Dataset is done." />
-    <option name="LAST_COMMIT_MESSAGE" value="Test on primitive Dataset is done." />
+    <MESSAGE value="Schedule tests done for now" />
+    <option name="LAST_COMMIT_MESSAGE" value="Schedule tests done for now" />
   </component>
 </project>
