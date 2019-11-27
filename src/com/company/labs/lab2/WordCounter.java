@@ -1,12 +1,13 @@
 package com.company.labs.lab2;
 
+import java.util.Map;
 import java.util.Scanner;
 import java.util.HashMap;
 
 public class WordCounter {
     String sourceString;
-    int countOfWords = 0;
-    int countOfUniqueWords = 0;
+    private int countOfWords = 0;
+    private int countOfUniqueWords = 0;
     String [] splittedWords;
     HashMap < String, Integer> uniqueWordsMap = new HashMap();
 
@@ -37,7 +38,7 @@ public class WordCounter {
         String [] splittedWords = sourceString.split("\\s+");
         int countOfWords = splittedWords.length;
 
-        HashMap < String, Integer> uniqueWordsMap = new HashMap();
+        Map<String, Integer> uniqueWordsMap = new HashMap<>();
 
         for (String word : splittedWords) {
             if (!uniqueWordsMap.containsKey(word)) {
