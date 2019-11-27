@@ -40,7 +40,8 @@ public class ScheduleDemo {
         // initialize Lessons
         //Lesson firstLesson = new Lesson(1, Subject.javaLang, tenthGroup, LocalDateTime.of(2019, Month.OCTOBER, 28, 8, 00), golovin);
 
-        List <Lesson> lessons = Arrays.asList(
+        //List <Lesson> lessons = Arrays.asList(
+        Lesson lessons[] = {
 
                 // (* 10th *)
                 // MONDAY
@@ -59,7 +60,7 @@ public class ScheduleDemo {
                 new Lesson(4, Subject.knoledgeBases, tenthGroup, LocalDateTime.of(2019, Month.OCTOBER, 30, 13, 00), kostenko),
                 new Lesson(5, Subject.webDev, tenthGroup, LocalDateTime.of(2019, Month.OCTOBER, 30, 15, 00), sinitsa),
 
-               // THURSDAY
+                // THURSDAY
                 new Lesson(1, Subject.swiftLang, tenthGroup, LocalDateTime.of(2019, Month.OCTOBER, 30, 8, 00), golovin),
                 new Lesson(2, Subject.swiftLang, tenthGroup, LocalDateTime.of(2019, Month.OCTOBER, 30, 9, 40), golovin),
                 new Lesson(3, Subject.swiftLang, tenthGroup, LocalDateTime.of(2019, Month.OCTOBER, 30, 11, 30), golovin),
@@ -97,7 +98,7 @@ public class ScheduleDemo {
                 new Lesson(2, Subject.javaLang, eleventhGroup, LocalDateTime.of(2019, Month.NOVEMBER, 1, 9, 40), golovin),
                 new Lesson(3, Subject.linearAlgebra, eleventhGroup, LocalDateTime.of(2019, Month.NOVEMBER, 1, 11, 30), malukhin),
                 new Lesson(4, Subject.webDev, eleventhGroup, LocalDateTime.of(2019, Month.NOVEMBER, 1, 13, 00), sinitsa)
-                );
+        };
 
         Schedule nextWeekSchedule = new Schedule(lessons, Arrays.asList(tenthGroup, eleventhGroup) );
 

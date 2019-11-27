@@ -9,8 +9,8 @@ public class Schedule {
     List <Lesson> lessons;
     List <Group> groups;
 
-    public Schedule(List <Lesson> lessons, List <Group> groups) {
-        this.lessons = new ArrayList<>(lessons);
+    public Schedule(Lesson lessons[], List <Group> groups) {
+        this.lessons = Arrays.asList(lessons);
         this.groups = new ArrayList<>(groups);
     }
 
