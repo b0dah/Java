@@ -44,6 +44,8 @@ public class CountWordsInFiles {
             while ((line = reader.readLine()) != null) {
                 textResult.append(line).append(" ");
             }
+
+            reader.close();
         }
 
         return textResult.toString();
