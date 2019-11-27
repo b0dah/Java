@@ -5,16 +5,6 @@ import org.testng.TestNGAntTask;
 
 import java.io.*;
 
-class Model implements Serializable {
-    String name;
-
-    Model(String name){
-        this.name = name;
-    }
-}
-
-
-
 public class CountWordsInFiles {
 
     public static final String workingDirectory = "TextFiles/";
