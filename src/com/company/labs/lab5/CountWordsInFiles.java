@@ -10,9 +10,9 @@ public class CountWordsInFiles {
     public static final String workingDirectory = "TextFiles/";
     private static String wholeText;
 
-    private static void generateFiles() throws IOException {
+    public static String generateFiles() throws IOException {
         // Create files and read Strings to them
-
+        StringBuilder resultString = new StringBuilder("");
         StringBuilder stringToWrite = new StringBuilder("");
 
         for (int index=1; index <= 10; index++) {
@@ -31,9 +31,10 @@ public class CountWordsInFiles {
             outputStream.write(stringToWrite.toString().getBytes());
             outputStream.close();
         }
+        return resultString.toString();
     }
 
-    private static String mergeFilesToString()  throws IOException {
+    public static String mergeFilesToString()  throws IOException {
         StringBuilder textResult = new StringBuilder("");
         for (int index = 1; index <= 10; index++) {
             StringBuilder filename = new StringBuilder(workingDirectory).append("file").append(String.valueOf(index)).append(".txt");

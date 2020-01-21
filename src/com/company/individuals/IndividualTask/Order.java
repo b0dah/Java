@@ -1,4 +1,4 @@
-package com.company.labs.lab6;
+package com.company.individuals.IndividualTask;
 
 
 import java.io.Serializable;
@@ -12,7 +12,7 @@ enum OrderStatus {
         ERROR
     }
 
-class OrderDataModel implements Serializable {
+public class Order implements Serializable {
     private int id;
     private String customerName;
     private String originAdress;
@@ -49,19 +49,14 @@ class OrderDataModel implements Serializable {
     }
 
     public void setStatus(int statusId) {
-        OrderStatus status;
 
-        switch (statusId) {
-            case 2: status = OrderStatus.DEFAULT; break;
-            case 3: status = OrderStatus.SEEN; break;
-            case 4: status = OrderStatus.STARTED; break;
-            case 5: status = OrderStatus.ARRIVED; break;
-            case 6: status = OrderStatus.DONE; break;
-
-            default: status = OrderStatus.ERROR;
-        }
-
+        OrderStatus status = OrderStatus.values()[statusId];
         this.status = status;
+    }
+
+    public void setStatus(OrderStatus newOrderStatus) {
+        this.status = newOrderStatus;
+
     }
 
     public void setNumberOfMovers(int numberOfMovers) {

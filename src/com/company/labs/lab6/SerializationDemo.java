@@ -1,7 +1,8 @@
 package com.company.labs.lab6;
 
 
-import javax.sound.midi.Soundbank;
+import com.company.individuals.IndividualTask.Order;
+
 import java.io.*;
 
 class UserModel implements Serializable {
@@ -34,13 +35,13 @@ public class SerializationDemo {
         }
     }
 
-    private static OrderDataModel deserializeObject() {
-        OrderDataModel instance = null;
+    private static Order deserializeObject() {
+        Order instance = null;
         try {
             FileInputStream file = new FileInputStream(filename);
             ObjectInputStream objectInputStream = new ObjectInputStream(file);
 
-            instance = (OrderDataModel) objectInputStream.readObject();
+            instance = (Order) objectInputStream.readObject();
 
             objectInputStream.close();
             file.close();
@@ -54,7 +55,7 @@ public class SerializationDemo {
         return instance;
     }
 
-    private static void prettyModelPrint(OrderDataModel order) {
+    private static void prettyModelPrint(Order order) {
         System.out.println("\n === Order ===\n" +
                 order.getCustomerName() + "\n" +
                 order.getDeliveryTime() + "\n" +
@@ -67,7 +68,7 @@ public class SerializationDemo {
     }
 
     public static void main(String[] args) {
-        OrderDataModel order = new OrderDataModel();
+        Order order = new Order();
         order.setId(100);
         order.setCustomerName("Байер (странное имя)");
         order.setDeliveryTime("08:00");
@@ -80,7 +81,7 @@ public class SerializationDemo {
 
 
         serializeObject(order);
-        OrderDataModel deserializeInstance = deserializeObject();
+        Order deserializeInstance = deserializeObject();
 
         System.out.println("\n DESERIALIZED OBJECT: ");
         prettyModelPrint(deserializeInstance);

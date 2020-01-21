@@ -122,7 +122,14 @@ public class ScheduleTest {
         Assertions.assertEquals(new ArrayList<>(), weekSchedule.getEducatorSchedule(fakeEducator));
 
         // 2. has ones
-        Assertions.assertEquals(Arrays.asList(lessons[2], lessons[3], lessons[9], lessons[lessons.length-1]), weekSchedule.getEducatorSchedule(sinitsa));
+        Assertions.assertEquals(
+                Arrays.asList(
+                        lessons[2],
+                        lessons[3],
+                        lessons[9],
+                        lessons[lessons.length-1]),
+                weekSchedule.getEducatorSchedule(sinitsa)
+        );
 //        Lesson sinitsaLesson1 = new Lesson(1, Subject.webDev, tenthGroup, LocalDateTime.of(2019, Month.OCTOBER, 29, 8, 00), sinitsa);
 //        Lesson sinitsaLesson2 = new Lesson(2, Subject.webDev, tenthGroup, LocalDateTime.of(2019, Month.OCTOBER, 29, 9, 40), sinitsa);
 //        Lesson sinitsaLesson3 = new Lesson(4, Subject.webDev, eleventhGroup, LocalDateTime.of(2019, Month.NOVEMBER, 1, 13, 00), sinitsa);
